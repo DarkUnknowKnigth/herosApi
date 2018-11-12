@@ -1,7 +1,7 @@
 'use-strict'
 const mongoose = require('mongoose')
 const hostname = '127.0.0.1';
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 const app = require('./app');
 const db = 'marvel'
 const portdb = 27017
