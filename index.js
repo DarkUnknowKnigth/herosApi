@@ -22,7 +22,7 @@ const options = {
 mongoose.connect(`mongodb://${hostname}:${portdb}/${db}`, options, (err) => {
     if (!err) {
         console.log(`mongo:::: db running on mongodb://${hostname}:${portdb}/${db}`)
-        app.listen(process.env.PORT, () => {
+        app.listen(port, () => {
             console.log(`server:::: server running on http://${hostname}:${port}`)
         });
     }
