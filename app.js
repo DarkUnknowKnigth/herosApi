@@ -23,7 +23,6 @@ app.get('/v1/image/:file', (req, res) => {
         res.status(500);
         res.send({ 'error': 'your image request have to end with: .jpg' })
     }
-
 });
 //routes
 app.get('/v1', (req, res) => {

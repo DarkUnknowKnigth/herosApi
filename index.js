@@ -1,6 +1,6 @@
 'use-strict'
 const mongoose = require('mongoose')
-const hostname = '127.0.0.1';
+const hostname = '0.0.0.0';
 const port = process.env.PORT || 3000;
 const app = require('./app');
 const db = 'marvel'
@@ -22,7 +22,7 @@ const options = {
 mongoose.connect(`mongodb://${hostname}:${portdb}/${db}`, options, (err) => {
     if (!err) {
         console.log(`mongo:::: db running on mongodb://${hostname}:${portdb}/${db}`)
-        app.listen(process.env.PORT, '0.0.0.0', () => {
+        app.listen(port, () => {
             console.log(`server:::: server running on http://${hostname}:${port}`)
         });
     }
