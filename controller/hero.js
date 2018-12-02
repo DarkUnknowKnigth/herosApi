@@ -1,5 +1,5 @@
 Hero = require("../model/hero");
-var server = "http://192.168.170.108:3000/v1/image/"
+var server = "/v1/image/"
 
 function all(req, res) {
     Hero.find({}).exec(function(err, heros) {

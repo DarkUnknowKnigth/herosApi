@@ -4,7 +4,6 @@
     "description": "api-heros, retorna informacion sobre heroes",
     "main": "index.js",
     "scripts": {
-        "start": "nodemon index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Jose Daniel Morales Ocampo",
@@ -14,7 +13,6 @@
         "mongodb": "^3.1.9",
         "mongoose": "^5.3.11",
         "morgan": "^1.9.1",
-        "nodemon": "^1.18.6",
         "path": "^0.12.7"
     },
     "engines": {
